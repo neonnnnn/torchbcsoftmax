@@ -1,0 +1,70 @@
+[project]
+name = "bcsoftmax"
+version = "1.0.dev0"
+description = "An implementation of box-constrained softmax function in PyTorch."
+readme = "README.md"
+maintainers = [
+    {name = "Kyohei Atarashi", email="atarashi@i.kyoto-u.ac.jp"},
+]
+
+requires-python = ">=3.9"
+license = {text = "MIT License"}
+classifiers=[
+    'Intended Audience :: Science/Research',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Topic :: Software Development',
+    'Topic :: Scientific/Engineering',
+    'Operating System :: POSIX',
+    'Operating System :: Unix',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+
+dependencies = [
+    "torch>=2.5.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "torch>=2.5.1",
+    "numpy>=1.26.4",
+    "lightning>=2.4.0",
+    "mlflow>=2.19.0",
+    "torchvision>=0.20.0",
+    "torchmetrics>=1.6.0",
+    "tensorflow",
+    "keras",
+    "hydra-core",
+    "omegaconf",
+    "schedulefree",
+    "black",
+    "isort",
+    "flake8",
+    "pytest",
+    "pyproject-flake8",
+    "pre-commit",
+    "flatdict",
+]
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["build", "tests"]
+
+[tool.black]
+line-length = 88
+preview = true
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
