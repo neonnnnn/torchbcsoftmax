@@ -1,4 +1,7 @@
 # torchbcsoftmax
+
+![python-package](https://github.com/neonnnnn/torchbcsoftmax/actions/workflows/python-package.yml/badge.svg)
+
 An implementation of Box-Constrained Softmax function in PyTorch.
 
 ## Installation
