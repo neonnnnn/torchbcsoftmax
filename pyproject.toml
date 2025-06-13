@@ -29,6 +29,15 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+test = [
+    "torch>=2.5.1",
+    "numpy>=1.26.4",
+    "black",
+    "isort",
+    "flake8",
+    "pytest",
+]
+
 dev = [
     "torch>=2.5.1",
     "numpy>=1.26.4",
