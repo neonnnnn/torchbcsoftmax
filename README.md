@@ -31,12 +31,12 @@ bcsoftmax.bcsoftmax(logit, lb, ub)
 ## Reference
 ```bibtex
 @misc{atarashi2025box,
-    title={Box-Constrained Softmax Function and Its Application for Post-Hoc Calibration}, 
+    title={Box-Constrained Softmax Function and Its Application for Post-Hoc Calibration},
     author={Kyohei Atarashi and Satoshi Oyama and Hiromi Arai and Hisashi Kashima},
     year={2025},
     eprint={2506.10572},
     archivePrefix={arXiv},
     primaryClass={stat.ML},
-    url={https://arxiv.org/abs/2506.10572}, 
+    url={https://arxiv.org/abs/2506.10572},
 }
 ```

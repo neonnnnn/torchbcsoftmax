@@ -6,17 +6,17 @@ import numpy as np
 import torch
 
 from bcsoftmax.upper_bounded_softmax import (
-    ubsoftmax_vector,
-    ubsoftmax_vector_cond,
+    ubsoftmax,
     ubsoftmax_batch,
     ubsoftmax_batch_cond,
-    ubsoftmax,
+    ubsoftmax_vector,
+    ubsoftmax_vector_cond,
 )
 
 from .ubsoftmax_slow import (
     ubsoftmax_vector_cond_naive,
-    ubsoftmax_vector_naive,
     ubsoftmax_vector_linear,
+    ubsoftmax_vector_naive,
 )
 
 rng = np.random.RandomState(1)

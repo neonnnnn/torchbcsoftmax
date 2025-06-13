@@ -2,8 +2,8 @@
 # Author: Kyohei Atarashi
 # License: MIT
 
-import torch
 import numpy as np
+import torch
 
 
 def ubsoftmax_vector_linear(x_, ub_):

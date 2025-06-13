@@ -6,12 +6,12 @@ import numpy as np
 import torch
 
 from bcsoftmax.box_constrained_softmax import (
-    bcsoftmax_vector,
-    bcsoftmax_batch,
     bcsoftmax,
+    bcsoftmax_batch,
+    bcsoftmax_vector,
 )
 
-from .bcsoftmax_slow import bcsoftmax_vector_naive, bcsoftmax_vector_loglinear
+from .bcsoftmax_slow import bcsoftmax_vector_loglinear, bcsoftmax_vector_naive
 
 rng = np.random.RandomState(1)
 batch_size = 64

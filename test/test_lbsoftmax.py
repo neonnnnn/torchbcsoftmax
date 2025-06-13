@@ -5,7 +5,7 @@
 import numpy as np
 import torch
 
-from bcsoftmax.lower_bounded_softmax import lbsoftmax_vector, lbsoftmax_batch, lbsoftmax
+from bcsoftmax.lower_bounded_softmax import lbsoftmax, lbsoftmax_batch, lbsoftmax_vector
 
 from .lbsoftmax_slow import lbsoftmax_vector_naive
 

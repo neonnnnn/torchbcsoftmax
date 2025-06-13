@@ -2,8 +2,10 @@
 # Author: Kyohei Atarashi
 # License: MIT
 
-import torch
 import math
+
+import torch
+
 from .ubsoftmax_slow import ubsoftmax_vector_cond_naive, ubsoftmax_vector_naive
 
 
