@@ -36,6 +36,8 @@ test = [
     "isort",
     "flake8",
     "pytest",
+    "pyproject-flake8",
+    "pre-commit",
 ]
 
 dev = [
